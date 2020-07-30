@@ -1,0 +1,92 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Description {
+  font-size: 60px;
+}
+.CarouselCard {
+  border: 3px #f3f3f3 solid;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s linear;
+  cursor: pointer;
+  background-color: #f3f3f3;
+  padding: 10px;
+  max-width: 220px;
+  text-align: left;
+  margin: 0 auto; }
+.CarouselCard:hover {
+  background-color: #f3f3f3;
+  border-color: #f3f3f3; }
+.CarouselCard img {
+  max-width: calc(100%);
+  margin: 0 auto;
+  display: block; }
+.CarouselCard .index {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  line-height: 20px;
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  padding: 0 10px; }
+.CarouselCard .details {
+  position: relative; }
+.CarouselCard .features {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+.CarouselCard .features li {
+  padding-left: 24px;
+  margin-right: 10px;
+  display: inline-block; }
+.CarouselCard .features li span {
+  display: none; }
+
+.CarouselCards-slider-wrapper {
+  display: flex; }
+
+.CarouselCards-slider {
+  position: relative;
+  max-width: 226px;
+  margin: 0 auto; }
+.CarouselCards-slider .CarouselCard {
+  flex: 1; }
+.CarouselCards-slider:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 264px;
+  outline: 5px solid #61DAFB;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
